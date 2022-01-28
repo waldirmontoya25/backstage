@@ -169,10 +169,15 @@ export const UserListPicker = ({
     ownedFilter.filterEntity(entity),
   ).length;
   const [selectedUserFilter, setSelectedUserFilter] = useState(
-    totalOwnedUserEntities > 0
-      ? [queryParameters.user].flat()[0] ?? initialFilter
-      : 'all',
+    totalOwnedUserEntities > 0 ? initialFilter : 'all',
   );
+
+  // Set selected user filter on query parameter updates; this happens at initial page load and from
+  // external updates to the page location.
+  useEffect(() => {
+    const queryParamUserFilter = [queryParameters.user].flat()[0];
+    setSelectedUserFilter(queryParamUserFilter as UserListFilterKind);
+  }, [queryParameters]);
 
   useEffect(() => {
     updateFilters({

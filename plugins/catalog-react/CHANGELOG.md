@@ -1,5 +1,19 @@
 # @backstage/plugin-catalog-react
 
+## 0.6.13-next.1
+
+### Patch Changes
+
+- f7257dff6f: The `<Link />` component now accepts a `noTrack` prop, which prevents the `click` event from being captured by the Analytics API. This can be used if tracking is explicitly not warranted, or in order to use custom link tracking in specific situations.
+- 300f8cdaee: Fix bug: previously the filter would be set to "all" on page load, even if the
+  `initiallySelectedFilter` on the `DefaultCatalogPage` was set to something else,
+  or a different query parameter was supplied. Now, the prop and query parameters
+  control the filter as expected. Additionally, after this change any filters
+  which match 0 items will be disabled, and the filter will be reverted to 'all'
+  if they're set on page load.
+- Updated dependencies
+  - @backstage/core-components@0.8.7-next.1
+
 ## 0.6.13-next.0
 
 ### Patch Changes

@@ -32,7 +32,7 @@
   "dependencies": {
     "@asyncapi/react-component": "1.0.0-next.32",
     "@backstage/catalog-model": "^0.9.10",
-    "@backstage/core-components": "^0.8.7-next.0",
+    "@backstage/core-components": "^0.8.7-next.1",
     "@backstage/core-plugin-api": "^0.6.0",
     "@backstage/plugin-catalog": "^0.7.11-next.0",
     "@backstage/plugin-catalog-react": "^0.6.13-next.0",

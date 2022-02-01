@@ -1,5 +1,17 @@
 # example-app
 
+## 0.2.63-next.1
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/core-components@0.8.7-next.1
+  - @backstage/plugin-catalog-react@0.6.13-next.1
+  - @backstage/plugin-catalog-common@0.1.2-next.0
+  - @backstage/plugin-scaffolder@0.12.1-next.1
+  - @backstage/plugin-techdocs@0.13.2-next.1
+  - @backstage/plugin-catalog@0.7.11-next.1
+
 ## 0.2.63-next.0
 
 ### Patch Changes
